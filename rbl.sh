@@ -1,6 +1,11 @@
 #!/bin/bash
 
 #rblDomainURL="http://www.joewein.net/dl/bl/dom-bl-base.txt"
+# https://www.iblocklist.com/lists
+# https://www.spamhaus.org/drop/
+# https://github.com/matomo-org/referrer-spam-list/blob/master/spammers.txt
+# idn2
+# https://www.tana.it/sw/spamhaus-drop/
 rblDomainURL="http://www.joewein.net/dl/bl/dom-bl.txt"
 BASEDIR="/home/fwadmin"
 
