@@ -1,12 +1,22 @@
 #!/bin/bash
 
 #rblDomainURL="http://www.joewein.net/dl/bl/dom-bl-base.txt"
+
+# https://www.vivaolinux.com.br/dica/IPtables-Blacklist-Script
+# idn2
+# TODO: Use IPSET
+
+# https://www.ipdeny.com/ipblocks/data/countries/all-zones.tar.gz
 # https://www.iblocklist.com/lists
 # https://www.spamhaus.org/drop/
 # https://github.com/matomo-org/referrer-spam-list/blob/master/spammers.txt
-# https://www.vivaolinux.com.br/dica/IPtables-Blacklist-Script
-# idn2
-# https://www.tana.it/sw/spamhaus-drop/
+# https://check.torproject.org/exit-addresses
+# https://check.torproject.org/torbulkexitlist
+# https://rules.emergingthreats.net/blockrules/compromised-ips.txt
+# https://lists.blocklist.de/lists/all.txt
+# https://iplists.firehol.org/
+# https://raw.githubusercontent.com/stamparm/ipsum/master/ipsum.txt
+
 rblDomainURL="http://www.joewein.net/dl/bl/dom-bl.txt"
 BASEDIR="/home/fwadmin"
 
