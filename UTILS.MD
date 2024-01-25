@@ -221,6 +221,18 @@ Neste comando estamos sniffando a eth0 para uma origem especificada:
 ```console
 tcpdump -i eth0 -qtNnn src 0.0.0.0
 ```
+
+Para monitorar um range de IPs utilize a opção `net`. 
+```console
+tcpdump -i eth0 -qtNnn net 103.21.244.0/22
+```
+
+Se houver necessidade de monitorar, simultaneamente, diversas redes ou IPs, utilize filtros. No exemplo abaixo estão sendo filtrados vários ranges de IPs da CloudFlare:
+
+```console
+tcpdump -i eth0 -qtNnn 'net(103.21.244.0/22 or 103.22.200.0/22 or 103.31.4.0/22 or 104.16.0.0/13 or 104.24.0.0/14 or 108.162.192.0/18 or 131.0.72.0/22 or 141.101.64.0/18 or 162.158.0.0/15 or 172.64.0.0/13 or 173.245.48.0/20 or 188.114.96.0/20 or 190.93.240.0/20 or 197.234.240.0/22 or 198.41.128.0/17)'
+```
+
 O comando tcpdump possui vários complementos os quais veremos agora.
 
 Neste comando repare que acrescentamos "Xxx", esses parâmetros permitem que você abra o pacote que está sendo transmitido pelo host determinado:
